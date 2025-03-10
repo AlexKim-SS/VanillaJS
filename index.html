@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/clock.js" defer></script>
+    <script src="js/greetings.js" defer></script>
+    <script src="js/quotes.js" defer></script>
+    <script src="js/background.js" defer></script>
+    <script src="js/todo.js" defer></script>
+    <script src="js/weather.js" defer></script>
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <div class="fullContainer">
+    
+      <div id="weather" class="alignRight">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="mainContainer alignCenter">
+        <div class="greetingContainer">
+          <h1 id="login-comment">Hello! What's your name?</h1>
+          <form id="login-form">
+            <input 
+              required maxlength=15 
+              type="text" 
+              class="nameInput" />
+            <p class="description">Please enter your first name or the name you prefer to be called.</p>
+            <input type="submit" class="enter" value="CONTINUE"/>
+          </form>
+          <h2 id="clock">00:00</h2>
+          <h1 id="greeting"></h1>
+        </div>
+        <div id="todos">
+          <div id="question">What is your plan for today?</div>
+          <form id="todo-form" class>
+            <input required type="text" id="todoInput" placeholder="Enter the plan" />
+          </form>
+          <div id="listItems">
+            <ul id="todo-list"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="quote" class="alignCenter">
+        <span id="quote-text" class></span>
+        <span id="quote-author" class></span>
+      </div>
+
+    </div>
+    
+    <div id="resetBtn">
+      <svg  width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 4V2L8 6L12 10V8C15.31 8 18 10.69 18 14C18 17.31 15.31 20 12 20C8.69 20 6 17.31 6 14H4C4 18.42 7.58 22 12 22C16.42 22 20 18.42 20 14C20 9.58 16.42 6 12 6Z" fill="white"/>
+      </svg>
+    </div>
+  </body>
+</html>
